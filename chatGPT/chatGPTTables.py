@@ -10,5 +10,5 @@ dataformat.sort_values(["Age Group"],
                inplace=True)
 
 
-dataformat.show
+dataformat
 #print((dataformat['Age Group'] == 'Less than 18').sum())
