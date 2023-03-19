@@ -5,26 +5,23 @@ import matplotlib.pyplot as plt
 
 dataformat = pd.read_csv('copyChatGPTDATA.csv')
 
-categories = []
 cols_to_drop = ['What purpose does ChatGPT serve you? Select all that apply.', 'How can academic institutions effectively use ChatGPT?', 'What are the main issues surrounding the use of ChatGPT in higher education?']
 
 # Use the loc method to drop the columns
 df = dataformat.loc[:, ~dataformat.columns.isin(cols_to_drop)]
-for a in df.columns:
-    categories.append(a)
 
 
-#pd.value_counts(newdf.values.flatten())
-for i in range(len(categories)):
-        
-        your_values = dataformat[categories[i]].value_counts()
-        
+
+for cat in df.columns:
+        your_values = df[cat].value_counts()
+        label = df[cat].unique()
         fig = plt.figure()
-        ax = fig.add_axes([0,0,1,1])
-        ax.set_title(categories[i])
-        ax.axis('equal')
-        n = ax.pie(your_values,autopct='%1.2f%%')
-        ax.legend(dataformat[categories[i]])
-        #plt.pie(your_values)
+        
+        plt.pie(your_values,autopct='%.2f%%')
+        plt.title(cat, pad=10)
+        plt.legend(label,loc='best')
+        
+        
+
 
 plt.show()
