@@ -20,7 +20,7 @@ for cat in df.columns:
         your_values = df[cat].value_counts() #data values of our pie chart
         label = df[cat].unique() #label of values
    
-        fig = plt.figure() #plot the pie chart   
+        fig = plt.subplots(figsize=(16,9)) #plot the pie chart   
         plt.title(cat, pad=10)#title of our pie chart
         plt.pie(your_values,autopct='%.2f%%') #format, show percentages values 
         plt.legend(label,loc='upper right') #legend of our pie chart
