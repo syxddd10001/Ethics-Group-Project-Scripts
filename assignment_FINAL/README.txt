@@ -9,11 +9,14 @@ pip install module_name
 
 Please MAXIMINZE or FULLSCREEN all windows after you run them to get the best format.
 
-How to run:
-Scripts: 
+Which scripts to run:
+
 barGraph.py
 pies2.py
 tables3.py
+
+How to run:
+
 
 Windows 11:
 1) Go to the directory where the scripts are extracted
