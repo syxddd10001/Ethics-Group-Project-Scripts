@@ -18,8 +18,10 @@ df = dataformat.loc[:, ~dataformat.columns.isin(dropped)]
 for cat in df.columns:
         #get the data and appropriate labels 
         your_values = df[cat].value_counts() #data values of our pie chart
-        label = df[cat].unique() #label of values
+        label = list(your_values.index) #label of values
    
+        #label_dict = {count: label[i] for i, count in enumerate(your_values)}
+        
         fig = plt.subplots(figsize=(16,9)) #plot the pie chart   
         plt.title(cat, pad=10)#title of our pie chart
         plt.pie(your_values,autopct='%.2f%%') #format, show percentages values 
