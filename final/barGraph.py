@@ -4,7 +4,7 @@ import csv
 import matplotlib.pyplot as plt
 
 #reading the csv file using pandas
-dataformat = pd.read_csv('final_ChatGPTdata.csv')
+dataformat = pd.read_csv('final_chatGPTdata.csv')
 
 # list of what we want to show on the bar graph
 purpose  = ['What purpose does ChatGPT serve you? Select all that apply. ']

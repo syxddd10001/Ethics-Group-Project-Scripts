@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 #reading the data file
-dataformat = pd.read_csv('final_ChatGPTData.csv')
+dataformat = pd.read_csv('final_chatGPTdata.csv')
 
 #list columns that are redundant to our pie chart
 dropped  = ['What purpose does ChatGPT serve you? Select all that apply. ', 'How can academic institutions effectively use ChatGPT?', 'What are the main issues surrounding the use of ChatGPT in higher education?']

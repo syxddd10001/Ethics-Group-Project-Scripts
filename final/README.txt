@@ -1,12 +1,13 @@
 Before running the scripts, these modules must be installed:
 pandas
 matplotlib
-matplotlib.pyplot
 numpy
-csv
+csv (works without sometimes)
 
 To install these modules, simply go to terminal (on Mac or Linux) or Command Promt (On Windows) and run:
 pip install module_name
+
+Please MAXIMINZE or FULLSCREEN all windows after you run them to get the best format.
 
 How to run:
 
@@ -32,4 +33,4 @@ Mac and Linux:
 Note: The scripts can be ran using VSCode or other IDEs but I ran into some issues sometimes when running them on VSCode. 
 Terminal or Command Promt is more reliable.
 
-Please contact any of our group members (Group 39) if you still cannot run the scripts.
+Please contact any of our group members (Group 39) if you still cannot run any of the scripts.
