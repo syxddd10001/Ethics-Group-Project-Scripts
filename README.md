@@ -52,5 +52,3 @@ Mac and Linux:
 
 Note: The scripts can be ran other IDEs but I ran into some issues sometimes. 
 VSCode Jupyter or Terminal/Command Promt is more reliable.
-
-Please contact any of our group members (Group 39) if you still cannot run any of the scripts.
